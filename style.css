@@ -1,0 +1,92 @@
+body{
+    background-color: #DCBADB;
+    margin: 0; 
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+/* INFORMACION */
+.Informacion{
+    display: flex;
+    justify-content: center;
+}
+.Foto_Juli{
+    width: 400px;
+    height: 500px; 
+}
+.Texto{
+    margin-top: 90px;
+    font-size: larger;
+}
+h1 {
+    font-size: 300%;
+    color: #8A6189;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+h1:hover {
+    color: #A875A8;
+    transform: scale(1.05);
+}
+
+p{
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* HABILIDADES */
+.Habilidades {
+    background-color: #C492C3;
+    background: linear-gradient(5deg, #C492C3, #865986);
+    overflow: hidden;  
+}
+h2 {
+    font-size: 200%;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.Iconos {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10px;
+}
+.Icon {
+    width: 100px;
+    height: 130px;
+}
+.Icon:hover {
+    filter: opacity(50%);
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+.IconosTexto {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 130%;
+}
+
+/* HOBBIES */
+
+.HobbieTitulo{
+    text-align: center;
+    margin-top: 20px;
+}
+.Galeria{
+    margin-left: 20%;
+ }
+.HobbieImg{
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover;
+    transition:transform 0.5s;
+}
+.HobbieImg:hover{
+    transform: rotate(3deg);
+}
