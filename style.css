@@ -15,13 +15,15 @@ body{
     justify-content: center;
 }
 .Foto_Juli{
-    width: 400px;
-    height: 500px; 
+    width: 90vw;
+    max-width: 400px;
+    
 }
 .Texto{
-    margin-top: 90px;
+    margin-top: 5vh;
     font-size: larger;
 }
+
 h1 {
     font-size: 300%;
     color: #8A6189;
@@ -57,8 +59,8 @@ h2 {
     margin-bottom: 10px;
 }
 .Icon {
-    width: 100px;
-    height: 130px;
+    width: 10vw;
+    height: 150px;
 }
 .Icon:hover {
     filter: opacity(50%);
@@ -78,8 +80,14 @@ h2 {
     text-align: center;
     margin-top: 20px;
 }
+
 .Galeria{
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
  }
 .HobbieImg{
     width: 400px; 
@@ -89,4 +97,128 @@ h2 {
 }
 .HobbieImg:hover{
     transform: rotate(3deg);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #8A6189;
+    overflow: hidden; 
+
+}
+
+h3 {
+    font-size: 150%;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none ;
+}
+
+a{
+text-decoration: none; /* Quita la subrayado */
+  color: inherit;
+  } 
+
+.IconFooter{
+    width: 2.5vw;
+    height: 5vh;
+    margin-right: 1%;
+    margin-left: 2%;
+    margin-top: 0%
+    
+}
+
+
+
+/* DIBUJAR */
+
+nav{    
+    margin: 0.1%;
+    opacity: 90%;
+    
+}
+.HomeImg{
+    width: 3vw;
+    height: 7vh;
+    padding: 1%;
+}
+ 
+.SliderDibujo {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.Slider {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Slider ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 0;
+    margin: 0;
+    animation: sway 6s ease-in-out infinite alternate;
+}
+
+.Slider li {
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.DibujosImg {
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2vw); /* Movimiento muy sutil hacia la izquierda */
+    }
+}
+
+/* LIBROS */
+
+.SliderLibros{
+    text-align: center;
+    width: 100%;
+}
+
+
+ /* JERRY */
+
+ .SliderJerry {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.JerryImg{
+    width: 25vw;
+    height: 50vh;
+    background-position: center;
+}
+
+/* JUEGOS */
+
+.SliderJuegos {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.JuegosImg{
+    width: 20vw;
+    height: auto;
+    background-position: center;
 }
